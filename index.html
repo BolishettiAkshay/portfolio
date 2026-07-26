@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Akshay Bolishetti — Software Development Engineer</title>
+  <meta name="description"
+    content="Portfolio of Akshay Bolishetti, an Aspiring Software Development Engineer specializing in Data Structures & Algorithms, Java, Spring Boot, React, and Full-Stack Engineering." />
+
+  <!-- Anti-flicker theme initialization script -->
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('portfolio-theme');
+      if (savedTheme === 'light' || savedTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="background-decor" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="page-shell">
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <a class="brand" href="#" aria-label="Akshay Bolishetti Home">
+          <span class="brand-name">Akshay Bolishetti</span>
+          <span class="brand-badge">SDE</span>
+        </a>
+
+        <div class="header-actions-right">
+          <nav class="nav" id="nav" aria-label="Main Navigation">
+            <ul class="nav-list">
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#skills" class="nav-link">Skills</a></li>
+              <li><a href="#projects" class="nav-link">Projects</a></li>
+              <li><a href="#achievements" class="nav-link">Achievements</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+
+          <a href="Akshay_Bolishetti_SDE_1.pdf" download class="btn btn-sm btn-nav-resume">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            <span>Resume</span>
+          </a>
+
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle Light/Dark Mode" title="Toggle Theme">
+            <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+
+          <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy animate-on-scroll">
+            <div class="status-pill">
+              <span class="status-dot"></span>
+              <span class="status-text">Available for SDE Opportunities</span>
+            </div>
+
+            <h1 class="hero-title">
+              Building scalable software and solving real-world problems.
+            </h1>
+
+            <p class="hero-description">
+              Aspiring Software Development Engineer passionate about Data Structures & Algorithms,
+              Backend Development, Full-Stack Engineering, and Open-Source Contributions.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="Akshay_Bolishetti_SDE_1.pdf" target="_blank" rel="noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+                <span>View Resume</span>
+              </a>
+            </div>
+
+            <div class="social-links-bar">
+              <a href="https://github.com/BolishettiAkshay" target="_blank" rel="noreferrer" class="social-icon-btn"
+                aria-label="GitHub Profile" title="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
+              </a>
+              <a href="https://leetcode.com/u/AkshayKumarB/" target="_blank" rel="noreferrer" class="social-icon-btn"
+                aria-label="LeetCode Profile" title="LeetCode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 18l6-6-6-6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/akshay-kumar-bolishetti-8b844a377/" target="_blank" rel="noreferrer"
+                class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+              <a href="mailto:akshaybolishetti2@gmail.com" class="social-icon-btn" aria-label="Email Akshay"
+                title="Email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-panel animate-on-scroll">
+            <div class="hero-card glass-card">
+              <div class="card-tag">Data Structures & Algorithms</div>
+              <h2>Algorithmic Thinking for Scalable Software</h2>
+              <p>Building a strong foundation in algorithm design, complexity
+                analysis, and optimization through pattern-based problem solving.</p>
+            </div>
+
+            <div class="stats-grid">
+              <div class="stat-card glass-card">
+                <span class="stat-number">200+</span>
+                <p class="stat-label">LeetCode Problems</p>
+              </div>
+              <div class="stat-card glass-card">
+                <span class="stat-number">3+</span>
+                <p class="stat-label">Full-Stack Projects</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section container">
+        <div class="section-intro animate-on-scroll">
+          <span class="section-eyebrow">About me</span>
+          <h2>Building software with a focus on problem-solving, scalability, and continuous learning.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy glass-card animate-on-scroll">
+            <p>Aspiring Software Development Engineer with a strong interest in Data Structures & Algorithms, backend
+              development, full-stack engineering, and open-source.</p>
+            <p>Passionate about building scalable solutions and continuously improving through learning and
+              collaboration.</p>
+          </div>
+
+          <div class="about-details glass-card animate-on-scroll">
+            <div class="detail-item">
+              <span class="detail-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </span>
+              <div>
+                <span class="detail-title">Location</span>
+                <span class="detail-value">Remote / Hyderabad, India</span>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <span class="detail-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </span>
+              <div>
+                <span class="detail-title">Tools & Technologies</span>
+                <span class="detail-value">Java, Spring Boot, React, MySQL, Git</span>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <span class="detail-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </span>
+              <div>
+                <span class="detail-title">Current Focus</span>
+                <span class="detail-value">Data Structures & Algorithms, Backend Systems</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section container">
+        <div class="section-intro animate-on-scroll">
+          <span class="section-eyebrow">Skillset</span>
+          <h2>Technologies and capabilities I bring to every project.</h2>
+        </div>
+
+        <div class="skills-categories-grid">
+          <!-- Languages Category -->
+          <div class="skill-category-card glass-card animate-on-scroll">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+              <h3>Languages</h3>
+            </div>
+            <div class="skill-chips">
+              <div class="skill-chip"><span class="chip-dot"></span> Java</div>
+              <div class="skill-chip"><span class="chip-dot"></span> JavaScript</div>
+              <div class="skill-chip"><span class="chip-dot"></span> HTML5</div>
+              <div class="skill-chip"><span class="chip-dot"></span> CSS3</div>
+            </div>
+          </div>
+
+          <!-- Frontend Category -->
+          <div class="skill-category-card glass-card animate-on-scroll">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+              </div>
+              <h3>Frontend</h3>
+            </div>
+            <div class="skill-chips">
+              <div class="skill-chip"><span class="chip-dot"></span> React</div>
+              <div class="skill-chip"><span class="chip-dot"></span> HTML & CSS</div>
+              <div class="skill-chip"><span class="chip-dot"></span> Responsive Web Design</div>
+              <div class="skill-chip"><span class="chip-dot"></span> DOM Manipulation</div>
+            </div>
+          </div>
+
+          <!-- Backend Category -->
+          <div class="skill-category-card glass-card animate-on-scroll">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                  <line x1="6" y1="6" x2="6.01" y2="6" />
+                  <line x1="6" y1="18" x2="6.01" y2="18" />
+                </svg>
+              </div>
+              <h3>Backend</h3>
+            </div>
+            <div class="skill-chips">
+              <div class="skill-chip"><span class="chip-dot"></span> Spring Boot</div>
+              <div class="skill-chip"><span class="chip-dot"></span> RESTful APIs</div>
+              <div class="skill-chip"><span class="chip-dot"></span> OOP Architecture</div>
+              <div class="skill-chip"><span class="chip-dot"></span> CRUD Systems</div>
+            </div>
+          </div>
+
+          <!-- Database Category -->
+          <div class="skill-category-card glass-card animate-on-scroll">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                </svg>
+              </div>
+              <h3>Database</h3>
+            </div>
+            <div class="skill-chips">
+              <div class="skill-chip"><span class="chip-dot"></span> MySQL</div>
+              <div class="skill-chip"><span class="chip-dot"></span> Relational Schema Design</div>
+              <div class="skill-chip"><span class="chip-dot"></span> SQL Queries</div>
+            </div>
+          </div>
+
+          <!-- Tools Category -->
+          <div class="skill-category-card glass-card animate-on-scroll">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                </svg>
+              </div>
+              <h3>Tools & Version Control</h3>
+            </div>
+            <div class="skill-chips">
+              <div class="skill-chip"><span class="chip-dot"></span> Git</div>
+              <div class="skill-chip"><span class="chip-dot"></span> GitHub</div>
+              <div class="skill-chip"><span class="chip-dot"></span> VS Code</div>
+              <div class="skill-chip"><span class="chip-dot"></span> Postman</div>
+            </div>
+          </div>
+
+          <!-- Problem Solving / Core SDE Category -->
+          <div class="skill-category-card glass-card animate-on-scroll">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+              </div>
+              <h3>Core SDE & Problem Solving</h3>
+            </div>
+            <div class="skill-chips">
+              <div class="skill-chip"><span class="chip-dot"></span> Data Structures & Algorithms</div>
+              <div class="skill-chip"><span class="chip-dot"></span> Problem Solving (LeetCode 200+)</div>
+              <div class="skill-chip"><span class="chip-dot"></span> Open-Source Contributions</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section container">
+        <div class="section-intro animate-on-scroll">
+          <span class="section-eyebrow">Projects</span>
+          <h2>Building software and solving real-world problems.</h2>
+        </div>
+
+        <div class="project-grid">
+          <!-- Project 1 -->
+          <article class="project-card glass-card animate-on-scroll">
+            <div class="project-header">
+              <div class="project-badge">Full-Stack</div>
+              <div class="project-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+              </div>
+            </div>
+            <h3>StudyOS</h3>
+            <p>Built a personal learning management platform to track DSA progress and tech-stack
+              roadmaps in one place, with an AI study assistant and automated LeetCode sync. Features
+              secure auth (JWT + Google/GitHub OAuth2), AES-256 encrypted data, and Flyway-managed schema migrations.
+            </p>
+
+            <div class="tech-stack-tags">
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>React</span>
+              <span>PostgreSQL</span>
+              <span>REST API</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-outline">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                <span>Live Demo</span>
+              </a>
+              <a href="#" class="btn btn-sm btn-outline">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
+                <span>Source</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card glass-card animate-on-scroll">
+            <div class="project-header">
+              <div class="project-badge">FULL-STACK</div>
+              <div class="project-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                </svg>
+              </div>
+            </div>
+            <h3>Procurement & Ticketing System</h3>
+            <p>Developed an internal procurement system where employees raise
+              tickets for hardware/software issues, routed to managers for approval.
+              Automated email and in-app notifications keep users updated on ticket status —
+              approval with delivery details, or rejection with reason.</p>
+
+            <div class="tech-stack-tags">
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>React</span>
+              <span>MySQL</span>
+              <span>REST API</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-outline">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                <span>Live Demo</span>
+              </a>
+              <a href="#" class="btn btn-sm btn-outline">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
+                <span>Source</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <!-- <article class="project-card glass-card animate-on-scroll">
+            <div class="project-header">
+              <div class="project-badge">Backend</div>
+              <div class="project-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                  <line x1="6" y1="6" x2="6.01" y2="6" />
+                  <line x1="6" y1="18" x2="6.01" y2="18" />
+                </svg>
+              </div>
+            </div>
+            <h3>REST API Service</h3>
+            <p>Designed and implemented RESTful APIs using Java and Spring Boot with database integration, CRUD
+              operations, and scalable backend architecture.</p>
+
+            <div class="tech-stack-tags">
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>REST API</span>
+              <span>MySQL</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-outline">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                <span>Live Demo</span>
+              </a>
+              <a href="#" class="btn btn-sm btn-outline">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
+                <span>Source</span>
+              </a>
+            </div>
+          </article> -->
+        </div>
+      </section>
+
+      <!-- Achievements Section -->
+      <section id="achievements" class="section container">
+        <div class="section-intro animate-on-scroll">
+          <span class="section-eyebrow">Achievements</span>
+          <h2>Recognition and certifications that reinforce quality execution.</h2>
+        </div>
+
+        <div class="achievement-grid">
+          <article class="achievement-card glass-card animate-on-scroll">
+            <div class="achievement-header">
+              <div class="achievement-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="7" />
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                </svg>
+              </div>
+              <span class="score-badge">Score: 98%</span>
+            </div>
+            <h3>NPTEL Programming in Java</h3>
+            <p>Earned the NPTEL Elite + Silver certification in Programming in Java with a score of 98%, showcasing
+              excellence in object-oriented programming principles and Java development.</p>
+          </article>
+
+          <article class="achievement-card glass-card animate-on-scroll">
+            <div class="achievement-header">
+              <div class="achievement-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </div>
+              <span class="score-badge">IBM Professional Certificate</span>
+            </div>
+            <h3>IBM Full Stack Developer</h3>
+            <p>Earned IBM's Full Stack Developer Professional Certificate, demonstrating practical skills in
+              modern frontend, backend, cloud-native development, version control, and application deployment.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section container">
+        <div class="section-intro animate-on-scroll">
+          <span class="section-eyebrow">Let’s connect</span>
+          <h2>Seeking opportunities to learn, build, and contribute as a software engineer.</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info glass-card animate-on-scroll">
+            <h3>Get in touch</h3>
+            <p>Reach out to discuss projects, software engineering opportunities, or technology.</p>
+
+            <a class="contact-email-card" href="mailto:akshaybolishetti2@gmail.com">
+              <div class="email-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div class="email-text">
+                <span class="email-label">Email Me</span>
+                <span class="email-address">akshaybolishetti2@gmail.com</span>
+              </div>
+              <svg class="arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+
+            <div class="contact-socials">
+              <a href="https://github.com/BolishettiAkshay" target="_blank" rel="noreferrer" class="social-chip">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
+                <span>GitHub</span>
+              </a>
+              </a>
+              <a href="https://www.linkedin.com/in/akshay-kumar-bolishetti-8b844a377/" target="_blank" rel="noreferrer"
+                class="social-chip">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Akshay Bolishetti. All rights reserved.</p>
+
+        <div class="footer-links">
+          <a href="https://github.com/BolishettiAkshay" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://leetcode.com/u/AkshayKumarB/" target="_blank" rel="noreferrer">LeetCode</a>
+          <a href="https://www.linkedin.com/in/akshay-kumar-bolishetti-8b844a377/" target="_blank"
+            rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
